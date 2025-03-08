@@ -1,0 +1,82 @@
+/* CONFIGURAÇÕES */
+:root {
+    --cor-um: #cf4f04;
+    --cor-dois: #FF9D23;
+    --cor-tres: #E5D0AC;
+    --cor-quatro: #FEF9E1;
+    --font-size-h1: 1.5em;
+    --font-size-h2: 1em;
+    --font-size-p: 0.5em;
+    --padding-padrao: 1em;
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* BODY */
+body {
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--cor-um);
+    color: var(--cor-quatro);
+    font-size: var(--font-size-h1);
+    padding: var(--padding-padrao);
+}
+
+.logo {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 6em;
+    max-width: 7em;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    font-size: var(--font-size-h2);
+    text-decoration: none;
+    color: var(--cor-tres);
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.nav-active {
+    color: var(--cor-quatro);
+    text-decoration: underline;
+
+}
+
+nav a:hover {
+    color: var(--cor-dois);
+    text-decoration: underline;
+
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background: var(--cor-um);
+    color: var(--cor-quatro);
+    padding: var(--padding-padrao);
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--font-size-h2)
+}

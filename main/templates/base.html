@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}ACONTURS - Conselho digital{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block stylesheets %}
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="Logo"/> 
+            <h1>{% block header %}Conselho Digital{% endblock %}</h1>
+        </div>
+        <nav>
+            <a href="" class="{% if request.path == '/' %}nav-active{% endif %}">Home</a>
+            <a href="" class="{% if request.path == 'agenda/' %}nav-active{% endif %}">Agenda</a>
+            <a href="" class="{% if request.path == 'contato/' %}nav-active{% endif %}">Contato</a>
+            <a href="" class="{% if request.path == 'sobre/' %}nav-active{% endif %}">Sobre</a>
+        </nav>
+    </header>
+    
+    {% block content %}{% endblock %}
+
+    <footer>
+        <p>&copy; 2025: Projeto de Extensão - Uniasselvi</p>
+    </footer>
+</body>
+</html>
