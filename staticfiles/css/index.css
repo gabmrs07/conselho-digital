@@ -1,0 +1,86 @@
+/* BANNER */
+
+.banner {
+    margin: 0;
+    background-color: var(--cor-dois);
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 600px) {}
+
+/* EVENTOS */
+.event-container {
+    display: flex;
+    gap: 1em;
+    padding: var(--padding-padrao);
+    background-color: var(--cor-dois);
+    width: 95%;
+}
+
+.event-box {
+    background-color: var(--cor-um);
+    border-radius: var(--border-radius);
+    padding: var(--padding-padrao);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: auto;
+    text-align: center;
+}
+
+.event-box h2 {
+    font-size: var(--font-size-h1);
+    color: var(--cor-quatro);
+}
+
+.event-box .event-date {
+    font-size: var(--font-size-h2);
+    color: var(--cor-tres);
+}
+
+.event-box .event-description {
+    font-size: var(--font-size-h2);
+    color: var(--cor-tres);
+}
+
+.event-box .event-link a {
+    color: var(--cor-dois);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.event-box .event-link a:hover {
+    text-decoration: underline;
+}
+
+/* SOBRE */
+.sobre {
+    background-color: var(--cor-um);
+    color: var(--cor-quatro);
+    padding: var(--padding-padrao);
+    margin: var(--margin-padrao);
+    border-radius: var(--border-radius);
+    min-height: 15em;
+    width: 95%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.sobre h2 {
+    font-size: var(--font-size-h1);
+    font-weight: bold;
+    text-align: center;
+}
+
+.sobre p {
+    font-size: var(--font-size-h2);
+    text-align: justify;
+    padding: var(--padding-padrao);
+    margin: var(--margin-padrao);
+}
