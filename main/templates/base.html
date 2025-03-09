@@ -13,7 +13,10 @@
     <header>
         <div class="logo">
             <img src="{% static 'images/logo.png' %}" alt="Logo"/> 
-            <h1>{% block header %}Conselho Digital{% endblock %}</h1>
+            <div class="title">
+                <h1>{% block header-h1 %}Conselho Digital{% endblock %}</h1>
+                <h2>{% block header-h2 %}ACONTURS - Associação dos conselheiros e<br>ex-conselheiros tutelares do Rio Grande do Sul{% endblock %}</h1>
+            </div>
         </div>
         <nav>
             <a href="" class="{% if request.path == '/' %}nav-active{% endif %}">Home</a>

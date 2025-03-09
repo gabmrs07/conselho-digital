@@ -1,16 +1,10 @@
-/* MAIN */
-main {
-    margin: 0;
-    padding: 0;
-}
+/* BANNER */
 
 .banner {
     margin: 0;
-
     background-color: var(--cor-dois);
 }
 
-/* BANNER */
 .banner img {
     width: 100%;
     height: auto;
@@ -25,11 +19,12 @@ main {
     gap: 1em;
     padding: var(--padding-padrao);
     background-color: var(--cor-dois);
+    width: 95%;
 }
 
 .event-box {
     background-color: var(--cor-um);
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     padding: var(--padding-padrao);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     flex: auto;
@@ -59,4 +54,33 @@ main {
 
 .event-box .event-link a:hover {
     text-decoration: underline;
+}
+
+/* SOBRE */
+.sobre {
+    background-color: var(--cor-um);
+    color: var(--cor-quatro);
+    padding: var(--padding-padrao);
+    margin: var(--margin-padrao);
+    border-radius: var(--border-radius);
+    min-height: 15em;
+    width: 95%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.sobre h2 {
+    font-size: var(--font-size-h1);
+    font-weight: bold;
+    text-align: center;
+}
+
+.sobre p {
+    font-size: var(--font-size-h2);
+    text-align: justify;
+    padding: var(--padding-padrao);
+    margin: var(--margin-padrao);
 }
