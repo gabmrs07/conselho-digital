@@ -119,11 +119,17 @@ import os
 
 STATIC_URL = "/static/"
 
-# Diretório de arquivos estáticos
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "main/static")]
-
 # Diretório onde os arquivos estáticos serão coletados ao rodar "collectstatic"
 STATIC_ROOT = os.path.join(BASE_DIR, "main/staticfiles")
+
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "main/media")
+
+# Adiciona os diretórios estáticos do app (caso necessário)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "main/static"),
+]
 
 
 # Default primary key field type
