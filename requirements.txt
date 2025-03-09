@@ -15,3 +15,4 @@ sqlparse==0.5.3
 types-pyyaml==6.0.12.20241230
 typing-extensions==4.12.2
 uv==0.6.5
+whitenoise==6.9.0
